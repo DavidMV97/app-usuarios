@@ -1,0 +1,17 @@
+<div class="row d-flex justify-content-center mt-3 " *ngIf="loading">
+    <div class="spinner-grow spinner-color ">
+        <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-grow spinner-color">
+        <span class="visually-hidden"></span>
+    </div>
+    <div class="spinner-grow spinner-color">
+        <span class="visually-hidden"></span>
+    </div>
+</div>
+
+<div class="row">
+    <div *ngFor="let usuario of listUsuarios" class="col-lg-3" style="margin: 30px;">
+        <app-card-usuario [user]="usuario"></app-card-usuario>
+    </div>
+</div>
